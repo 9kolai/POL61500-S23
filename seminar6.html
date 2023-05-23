@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>POL61500: Seminar 6</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="dist/reveal-override.css"/>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<!-- css added for tree data visualisation -->
+		<link rel="stylesheet" href="treeData/treeData.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/treeflex/dist/css/treeflex.css"> 
+<!--		<style>
+		.tree,
+.tree ul,
+.tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+.tree,
+.tree ul {
+    display: table;
+}
+.tree ul {
+    width: 100%;
+}
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+.tree li:before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tree li:first-child:before {
+    left: 50%;
+}
+.tree li:last-child:before {
+    right: 50%;
+}
+.tree code,
+.tree span {
+    border: solid .1em #666;
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .2em .5em;
+    position: relative;
+}
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+    outline: solid 1px #666;
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+.tree ul:before {
+    top: -.5em;
+}
+.tree code:before,
+.tree span:before {
+    top: -.55em;
+}
+.tree>li {
+    margin-top: 0;
+}
+.tree>li:before,
+.tree>li:after,
+.tree>li>code:before,
+.tree>li>span:before {
+    outline: none;
+}
+		</style> 	-->
+		
+	</head>
+	<body>
+		<header><img src="pic/LogoMainBlue2.png" style="width:100% "></header>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="pic/BGMainBlue.gif" style="color:white">
+					<h1  style="color:white">POL61500: Democratic Innovations in the Digital Age</h1>
+					<p>Seminar 6</p>
+					<p>München, 23. May 2023</p>
+					<p>Nikolai Gad</p>
+				</section>
+				
+				<section>
+					<h3 style="color: rgb(0,101,189)">Referendums </h3>
+					<section style="width: 100vw">
+						<div id="tree"></div>
+					</section>
+					<section style="width: 100vw">
+						
+
+<div class="tf-tree" style="width: 100vw">
+  <ul>
+    <li>
+      <span class="tf-nc">1</span>
+      <ul>
+        <li><span class="tf-nc">2</span></li>
+        <li><span class="tf-nc">3</span></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+					</section>
+					
+					<section >
+						<ul class="tree" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+							<li class="fragment"><span>Referenda:</span>
+							<ul>
+								<li  class="fragment"><span>"Decision-promoting"</span>
+								<ul>
+									<li class="fragment"><span>Plebiscites</span></li>
+									<li class="fragment"><span>Popular initiatives </span>
+									<ul>
+										<li class="fragment"><span>Citizens' Initiatives</span>
+										<ul>
+											<li class="fragment">
+												<p>Full-scale</p>
+												<p class="fragment">Popular support</p>
+												<p class="fragment">Referendum</p>
+											</li>
+											<li class="fragment">
+												<p>Referendum-motions</p>
+												<p class="fragment">Popular support</p>
+												<p class="fragment">Legislative body</p>
+												<p class="fragment">Referendum</p>
+											</li>
+											<li class="fragment">
+												<p>Agenda-initiatives</p>
+												<p class="fragment">Popular support</p>
+												<p class="fragment">Legislators/elected representatives</p>
+											</li>
+										</ul>
+										</li>
+									</ul>
+									</li>
+								</ul>
+								</li>
+								<li class="fragment"><span>"Decision-controlling"</span>
+								<ul>
+									<li class="fragment"><span>Constitutionally required</span></li>
+									<li class="fragment"><span>Facultative referenda</span></li>
+									<li class="fragment"><span>Parliamentary minority</span></li>
+								</ul>
+								</li>
+								
+								
+							</ul>
+							</li>
+						</ul>
+					</section>
+					
+				</section>
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ], 
+			});
+		</script>
+		
+		<!-- javascript to visualise tree data structure -->
+		<script src="treeData/treeData.js"></script>
+		<script type="text/javascript">
+		
+		var tree = {
+		     referenda : {value : "Referenda", parent : ""},
+		     promoting : {value : "Decision-promoting", parent : "referenda"},
+		     controlling : {value : "Decision-controlling", parent : "referenda"},
+		     plebiscites : {value : "Plebiscites", parent : "promoting"},
+		     PopIni : {value : "Popular initiatives", parent : "promoting"},
+		     Const : {value : "Constitutionally required", parent : "controlling"},
+		     facultative : {value : "Facultative referenda", parent : "controlling"},
+		     parlMin : {value : "Parliamentally minority initiated", parent : "controlling"},
+		     CI : {value : "Citizens' Initiatives", parent : "PopIni"}
+		};
+		
+		TreeData(tree, "#tree");
+		</script>
+	</body>
+</html>
